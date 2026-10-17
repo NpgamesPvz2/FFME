@@ -14,4 +14,4 @@ The extension scans the tooltip of a post's posting time then compare with "mile
 - If the notification shows "BEFORE MILESTONE T", you have read all the new posts. Click "Move milestone T" and you have done.<br>
 - If the notification shows "FROM MILESTONE T ON", you can read that corresponding post then scrolling and hover again.<br>
 <h2>My opinion</h2>
-Well, this extension is very basic and kind of stupid but it has helped me to stop scrolling endlessly and saved my time a lot. And this is my first personal project. I don't have any knowledge about building an extension or app so I had to vibe-code it. But yeah, at least, I experienced how to build an extension and "vibe-coding".
+Well, this extension is very basic and kind of stupid but it has helped me to stop scrolling endlessly and saved my time a lot. And this is my first personal project. I don't have any knowledge about building an extension or app so I had to vibe-code it. But yeah, at least, I experienced how to build an extension and kind of vibe-coding.
