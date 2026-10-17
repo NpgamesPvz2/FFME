@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Facebook Feed Marker Extension</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+<header><h1>Facebook Feed Marker Extension</h1><p id="status">Đang tải…</p></header>
+
+<section class="panel"><label for="startInput">Mốc thời gian T</label><input id="startInput" type="datetime-local"><div class="actions"><button id="saveCustom">Lưu mốc T đã chọn</button><button id="saveNow" class="secondary">Lấy thời điểm hiện tại</button></div><div id="savedTime" class="hint">Chưa lưu mốc T</div></section>
+
+<section class="panel"><label class="toggle"><input type="checkbox" id="enabled"> Đánh dấu bài trước T và từ mốc T trở đi</label><p class="hint">Trước T: khung chữ đỏ “TRƯỚC MỐC T”.<br> Đúng T hoặc sau T: khung chữ xanh “TỪ MỐC T TRỞ ĐI”.</br> Chỉ dùng ngày giờ chính xác.</p><button id="clearStart" class="secondary">Xóa mốc T</button><button id="scan" class="secondary">Áp dụng / quét lại</button></section>
+
+<section class="panel"><strong>Theo dõi tiến trình kiểm tra</strong><div class="checkpoint"><span>Mốc T</span><strong id="compareCheckpoint">Chưa có</strong></div><div class="checkpoint"><span>Mốc mới</span><strong id="newCheckpoint">Chưa có</strong></div><button id="captureCheckpoint">Ghi nhận mốc mới</button><button id="advanceCheckpoint" class="secondary">Chuyển mốc T</button>
+
+<section class="panel privacy"><strong>Hướng dẫn sử dụng</strong><p class="hint">Vào Feed trong Facebook<br>Bấm vào nút⏱️ở bên phải màn hình và bấm "Ghi nhận mốc mới (hiện tại)" để lưu mốc mới</br>Di chuột vào thời gian trên mỗi bài viết để extension quét thời gian đăng và thông báo<br>Nếu thông báo hiện "TRƯỚC MỐC T", bạn đã đọc xong các bài viết mới. Bấm "Chuyển mốc T" và xong.</br></p></section>
+
+<footer>v0.7.4.5 · Made by NP and ChatGPT</footer>
+<script src="popup.js"></script>
+</body></html>
