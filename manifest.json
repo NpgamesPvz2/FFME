@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "Facebook Feed Marker Extension",
+  "version": "0.7.4.5",
+  "description": "Đánh dấu bài đăng trước mốc thời gian T và từ mốc thời gian T trở đi; có nút nổi mở cài đặt ngay trên Facebook",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://www.facebook.com/*",
+    "https://facebook.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.facebook.com/*",
+        "https://facebook.com/*"
+      ],
+      "js": [
+        "content/scanner.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "popup/popup.html",
+        "popup/popup.css",
+        "popup/popup.js"
+      ],
+      "matches": [
+        "https://www.facebook.com/*",
+        "https://facebook.com/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_title": "Facebook Feed Marker Extension",
+    "default_popup": "popup/popup.html"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlpxcBQH2uYQTB9jbqQhbU8Ix0O0YTvo+DT3m2ExeRbAiEng4wcsEjMnYCFX04g3GTvy7G1WC67ytZXpnjtrSQlj5gCnbg1/W4d7mQBBkXW+tCfQWL/4QDAYuBeVwjXM/Guww8uQOMCTLHhDbD2W17PEMk63LC7S/LwjJIDv9RNLMDBl8Q1iYTks4l+d60TSiGMoSHiKcuFMbHg70jgGCs96QhBj27otkX2eoqPdXqyxVIPojpygPfVVV8VLnzYJ7wWmyBAREcxMdGs0K8zfex2BdBmouJLgIyBM+j75O7hyMWFaB5k6zH2jko0P7uddoBd7P9WrWMri7MMUGu20PnwIDAQAB"
+}
